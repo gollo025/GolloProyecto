@@ -50,12 +50,10 @@ namespace EDDemo
             this.qUICKSORTToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.sHELLSORTToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.rADIXToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.iNTERCALACIONToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.mEZCLADIRECTAToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.mEZCLANATURALToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
             this.bUSQUEDAToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.bUSQUEDAINTERNAToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -74,7 +72,7 @@ namespace EDDemo
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Padding = new System.Windows.Forms.Padding(4, 2, 0, 2);
-            this.menuStrip1.Size = new System.Drawing.Size(1025, 33);
+            this.menuStrip1.Size = new System.Drawing.Size(1025, 36);
             this.menuStrip1.TabIndex = 3;
             this.menuStrip1.Text = "menuStrip1";
             this.menuStrip1.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.menuStrip1_ItemClicked);
@@ -202,10 +200,7 @@ namespace EDDemo
             this.bURBUJAToolStripMenuItem,
             this.qUICKSORTToolStripMenuItem,
             this.sHELLSORTToolStripMenuItem,
-            this.rADIXToolStripMenuItem,
-            this.iNTERCALACIONToolStripMenuItem,
-            this.mEZCLADIRECTAToolStripMenuItem,
-            this.mEZCLANATURALToolStripMenuItem});
+            this.rADIXToolStripMenuItem});
             this.mETODOSDEORDENAMIENTOToolStripMenuItem.Name = "mETODOSDEORDENAMIENTOToolStripMenuItem";
             this.mETODOSDEORDENAMIENTOToolStripMenuItem.Size = new System.Drawing.Size(165, 29);
             this.mETODOSDEORDENAMIENTOToolStripMenuItem.Text = "ORDENAMIENTO";
@@ -230,31 +225,13 @@ namespace EDDemo
             this.sHELLSORTToolStripMenuItem.Name = "sHELLSORTToolStripMenuItem";
             this.sHELLSORTToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
             this.sHELLSORTToolStripMenuItem.Text = "SHELLSORT";
+            this.sHELLSORTToolStripMenuItem.Click += new System.EventHandler(this.sHELLSORTToolStripMenuItem_Click);
             // 
             // rADIXToolStripMenuItem
             // 
             this.rADIXToolStripMenuItem.Name = "rADIXToolStripMenuItem";
             this.rADIXToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
             this.rADIXToolStripMenuItem.Text = "RADIX";
-            // 
-            // iNTERCALACIONToolStripMenuItem
-            // 
-            this.iNTERCALACIONToolStripMenuItem.Name = "iNTERCALACIONToolStripMenuItem";
-            this.iNTERCALACIONToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
-            this.iNTERCALACIONToolStripMenuItem.Text = "INTERCALACION";
-            // 
-            // mEZCLADIRECTAToolStripMenuItem
-            // 
-            this.mEZCLADIRECTAToolStripMenuItem.Name = "mEZCLADIRECTAToolStripMenuItem";
-            this.mEZCLADIRECTAToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
-            this.mEZCLADIRECTAToolStripMenuItem.Text = "MEZCLA DIRECTA";
-            // 
-            // mEZCLANATURALToolStripMenuItem
-            // 
-            this.mEZCLANATURALToolStripMenuItem.Name = "mEZCLANATURALToolStripMenuItem";
-            this.mEZCLANATURALToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
-            this.mEZCLANATURALToolStripMenuItem.Text = "MEZCLA NATURAL";
-            this.mEZCLANATURALToolStripMenuItem.Click += new System.EventHandler(this.mEZCLANATURALToolStripMenuItem_Click);
             // 
             // toolStripMenuItem1
             // 
@@ -268,10 +245,19 @@ namespace EDDemo
             // 
             // bUSQUEDAToolStripMenuItem
             // 
+            this.bUSQUEDAToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.bUSQUEDAINTERNAToolStripMenuItem});
             this.bUSQUEDAToolStripMenuItem.Name = "bUSQUEDAToolStripMenuItem";
-            this.bUSQUEDAToolStripMenuItem.Size = new System.Drawing.Size(120, 29);
+            this.bUSQUEDAToolStripMenuItem.Size = new System.Drawing.Size(120, 32);
             this.bUSQUEDAToolStripMenuItem.Text = "BUSQUEDA";
             this.bUSQUEDAToolStripMenuItem.Click += new System.EventHandler(this.bUSQUEDAToolStripMenuItem_Click);
+            // 
+            // bUSQUEDAINTERNAToolStripMenuItem
+            // 
+            this.bUSQUEDAINTERNAToolStripMenuItem.Name = "bUSQUEDAINTERNAToolStripMenuItem";
+            this.bUSQUEDAINTERNAToolStripMenuItem.Size = new System.Drawing.Size(283, 34);
+            this.bUSQUEDAINTERNAToolStripMenuItem.Text = "BUSQUEDA INTERNA";
+            this.bUSQUEDAINTERNAToolStripMenuItem.Click += new System.EventHandler(this.bUSQUEDAINTERNAToolStripMenuItem_Click);
             // 
             // frmInicio
             // 
@@ -316,10 +302,8 @@ namespace EDDemo
         private System.Windows.Forms.ToolStripMenuItem qUICKSORTToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem sHELLSORTToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem rADIXToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem iNTERCALACIONToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem mEZCLADIRECTAToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem mEZCLANATURALToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem bUSQUEDAToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem bUSQUEDAINTERNAToolStripMenuItem;
     }
 }
 

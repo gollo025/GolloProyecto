@@ -64,6 +64,12 @@
     <Compile Include="Estructuras No Lineales\Forms\Busqueda.Designer.cs">
       <DependentUpon>Busqueda.cs</DependentUpon>
     </Compile>
+    <Compile Include="Estructuras No Lineales\Forms\BusquedaInterna.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Estructuras No Lineales\Forms\BusquedaInterna.Designer.cs">
+      <DependentUpon>BusquedaInterna.cs</DependentUpon>
+    </Compile>
     <Compile Include="Estructuras No Lineales\Forms\Colas.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -125,6 +131,18 @@
     <Compile Include="Estructuras No Lineales\Forms\QuickSort.Designer.cs">
       <DependentUpon>QuickSort.cs</DependentUpon>
     </Compile>
+    <Compile Include="Estructuras No Lineales\Forms\Radix.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Estructuras No Lineales\Forms\Radix.Designer.cs">
+      <DependentUpon>Radix.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Estructuras No Lineales\Forms\ShellSort.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Estructuras No Lineales\Forms\ShellSort.Designer.cs">
+      <DependentUpon>ShellSort.cs</DependentUpon>
+    </Compile>
     <Compile Include="Estructuras No Lineales\Forms\Suma.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -144,6 +162,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Estructuras No Lineales\Forms\Busqueda.resx">
       <DependentUpon>Busqueda.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Estructuras No Lineales\Forms\BusquedaInterna.resx">
+      <DependentUpon>BusquedaInterna.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Estructuras No Lineales\Forms\Colas.resx">
       <DependentUpon>Colas.cs</DependentUpon>
@@ -174,6 +195,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Estructuras No Lineales\Forms\QuickSort.resx">
       <DependentUpon>QuickSort.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Estructuras No Lineales\Forms\Radix.resx">
+      <DependentUpon>Radix.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Estructuras No Lineales\Forms\ShellSort.resx">
+      <DependentUpon>ShellSort.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Estructuras No Lineales\Forms\Suma.resx">
       <DependentUpon>Suma.cs</DependentUpon>

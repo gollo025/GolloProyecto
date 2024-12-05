@@ -176,5 +176,24 @@ namespace EDDemo
 
             quickSort.Show();
         }
+
+        private void sHELLSORTToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ShellSort shellSort = new ShellSort();  
+
+            shellSort.MdiParent = this;
+
+            shellSort.Show();
+        }
+
+        
+        private void bUSQUEDAINTERNAToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            BusquedaInterna busquedaInterna = new BusquedaInterna();    
+
+            busquedaInterna.MdiParent = this;
+
+            busquedaInterna.Show();
+        }
     }
 }

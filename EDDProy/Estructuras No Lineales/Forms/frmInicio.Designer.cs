@@ -29,6 +29,7 @@ namespace EDDemo
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.estructurasNoLibealesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.arbolesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -55,6 +56,8 @@ namespace EDDemo
             this.bUSQUEDAToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.bUSQUEDAINTERNAToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.bUSQUEDASECUENCIALToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.imageList1 = new System.Windows.Forms.ImageList(this.components);
+            this.label1 = new System.Windows.Forms.Label();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -137,8 +140,9 @@ namespace EDDemo
             // lISTASCIRCSIMPToolStripMenuItem
             // 
             this.lISTASCIRCSIMPToolStripMenuItem.Name = "lISTASCIRCSIMPToolStripMenuItem";
-            this.lISTASCIRCSIMPToolStripMenuItem.Size = new System.Drawing.Size(255, 34);
+            this.lISTASCIRCSIMPToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
             this.lISTASCIRCSIMPToolStripMenuItem.Text = "LISTAS CIRC.SIMP";
+            this.lISTASCIRCSIMPToolStripMenuItem.Click += new System.EventHandler(this.lISTASCIRCSIMPToolStripMenuItem_Click);
             // 
             // rECURSIVIDADToolStripMenuItem
             // 
@@ -210,28 +214,28 @@ namespace EDDemo
             // bURBUJAToolStripMenuItem
             // 
             this.bURBUJAToolStripMenuItem.Name = "bURBUJAToolStripMenuItem";
-            this.bURBUJAToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
+            this.bURBUJAToolStripMenuItem.Size = new System.Drawing.Size(209, 34);
             this.bURBUJAToolStripMenuItem.Text = "BURBUJA";
             this.bURBUJAToolStripMenuItem.Click += new System.EventHandler(this.bURBUJAToolStripMenuItem_Click);
             // 
             // qUICKSORTToolStripMenuItem
             // 
             this.qUICKSORTToolStripMenuItem.Name = "qUICKSORTToolStripMenuItem";
-            this.qUICKSORTToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
+            this.qUICKSORTToolStripMenuItem.Size = new System.Drawing.Size(209, 34);
             this.qUICKSORTToolStripMenuItem.Text = "QUICKSORT";
             this.qUICKSORTToolStripMenuItem.Click += new System.EventHandler(this.qUICKSORTToolStripMenuItem_Click);
             // 
             // sHELLSORTToolStripMenuItem
             // 
             this.sHELLSORTToolStripMenuItem.Name = "sHELLSORTToolStripMenuItem";
-            this.sHELLSORTToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
+            this.sHELLSORTToolStripMenuItem.Size = new System.Drawing.Size(209, 34);
             this.sHELLSORTToolStripMenuItem.Text = "SHELLSORT";
             this.sHELLSORTToolStripMenuItem.Click += new System.EventHandler(this.sHELLSORTToolStripMenuItem_Click);
             // 
             // rADIXToolStripMenuItem
             // 
             this.rADIXToolStripMenuItem.Name = "rADIXToolStripMenuItem";
-            this.rADIXToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
+            this.rADIXToolStripMenuItem.Size = new System.Drawing.Size(209, 34);
             this.rADIXToolStripMenuItem.Text = "RADIX";
             // 
             // toolStripMenuItem1
@@ -257,7 +261,7 @@ namespace EDDemo
             // bUSQUEDAINTERNAToolStripMenuItem
             // 
             this.bUSQUEDAINTERNAToolStripMenuItem.Name = "bUSQUEDAINTERNAToolStripMenuItem";
-            this.bUSQUEDAINTERNAToolStripMenuItem.Size = new System.Drawing.Size(283, 34);
+            this.bUSQUEDAINTERNAToolStripMenuItem.Size = new System.Drawing.Size(311, 34);
             this.bUSQUEDAINTERNAToolStripMenuItem.Text = "BUSQUEDA INTERNA";
             this.bUSQUEDAINTERNAToolStripMenuItem.Click += new System.EventHandler(this.bUSQUEDAINTERNAToolStripMenuItem_Click);
             // 
@@ -268,11 +272,28 @@ namespace EDDemo
             this.bUSQUEDASECUENCIALToolStripMenuItem.Text = "BUSQUEDA SECUENCIAL";
             this.bUSQUEDASECUENCIALToolStripMenuItem.Click += new System.EventHandler(this.bUSQUEDASECUENCIALToolStripMenuItem_Click);
             // 
+            // imageList1
+            // 
+            this.imageList1.ColorDepth = System.Windows.Forms.ColorDepth.Depth8Bit;
+            this.imageList1.ImageSize = new System.Drawing.Size(16, 16);
+            this.imageList1.TransparentColor = System.Drawing.Color.Transparent;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Image = global::EDDemo.Properties.Resources.jframe;
+            this.label1.Location = new System.Drawing.Point(189, 145);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(0, 20);
+            this.label1.TabIndex = 5;
+            // 
             // frmInicio
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.MenuHighlight;
             this.ClientSize = new System.Drawing.Size(1025, 654);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.menuStrip1);
             this.IsMdiContainer = true;
             this.MainMenuStrip = this.menuStrip1;
@@ -314,6 +335,8 @@ namespace EDDemo
         private System.Windows.Forms.ToolStripMenuItem bUSQUEDAToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem bUSQUEDAINTERNAToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem bUSQUEDASECUENCIALToolStripMenuItem;
+        private System.Windows.Forms.ImageList imageList1;
+        private System.Windows.Forms.Label label1;
     }
 }
 

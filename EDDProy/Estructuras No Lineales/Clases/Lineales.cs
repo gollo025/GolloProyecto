@@ -530,9 +530,15 @@ namespace EDDemo.Estructuras_No_Lineales.Clases
                 }
             }
         }
+        
+
 
     }
 }
+
+        // Clase Nodo para representar los nodos de la lista
+      
+
 
     
 

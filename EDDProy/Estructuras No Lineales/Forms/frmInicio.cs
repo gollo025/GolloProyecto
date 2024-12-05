@@ -207,11 +207,11 @@ namespace EDDemo
 
         private void bUSQUEDAHASHToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            BusquedaHash busquedaHash = new BusquedaHash();
+            
+        }
 
-            busquedaHash .MdiParent = this;
-
-            busquedaHash .Show();
+        private void lISTASCIRCSIMPToolStripMenuItem_Click(object sender, EventArgs e)
+        {
         }
     }
 }

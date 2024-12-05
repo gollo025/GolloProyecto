@@ -170,7 +170,11 @@ namespace EDDemo
 
         private void qUICKSORTToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            QuickSort quickSort = new QuickSort();
 
+            quickSort.MdiParent = this;
+
+            quickSort.Show();
         }
     }
 }

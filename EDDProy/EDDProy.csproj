@@ -172,6 +172,9 @@
     <EmbeddedResource Include="Estructuras No Lineales\Forms\Pilas.resx">
       <DependentUpon>Pilas.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Estructuras No Lineales\Forms\QuickSort.resx">
+      <DependentUpon>QuickSort.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Estructuras No Lineales\Forms\Suma.resx">
       <DependentUpon>Suma.cs</DependentUpon>
     </EmbeddedResource>

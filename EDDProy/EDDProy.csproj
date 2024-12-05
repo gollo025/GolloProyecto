@@ -70,6 +70,12 @@
     <Compile Include="Estructuras No Lineales\Forms\BusquedaInterna.Designer.cs">
       <DependentUpon>BusquedaInterna.cs</DependentUpon>
     </Compile>
+    <Compile Include="Estructuras No Lineales\Forms\BusquedaSecuencial.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Estructuras No Lineales\Forms\BusquedaSecuencial.Designer.cs">
+      <DependentUpon>BusquedaSecuencial.cs</DependentUpon>
+    </Compile>
     <Compile Include="Estructuras No Lineales\Forms\Colas.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -165,6 +171,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Estructuras No Lineales\Forms\BusquedaInterna.resx">
       <DependentUpon>BusquedaInterna.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Estructuras No Lineales\Forms\BusquedaSecuencial.resx">
+      <DependentUpon>BusquedaSecuencial.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Estructuras No Lineales\Forms\Colas.resx">
       <DependentUpon>Colas.cs</DependentUpon>

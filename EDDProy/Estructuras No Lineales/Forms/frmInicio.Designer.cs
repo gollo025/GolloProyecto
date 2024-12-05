@@ -54,6 +54,7 @@ namespace EDDemo
             this.toolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
             this.bUSQUEDAToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.bUSQUEDAINTERNAToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.bUSQUEDASECUENCIALToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -72,7 +73,7 @@ namespace EDDemo
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Padding = new System.Windows.Forms.Padding(4, 2, 0, 2);
-            this.menuStrip1.Size = new System.Drawing.Size(1025, 36);
+            this.menuStrip1.Size = new System.Drawing.Size(1025, 33);
             this.menuStrip1.TabIndex = 3;
             this.menuStrip1.Text = "menuStrip1";
             this.menuStrip1.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.menuStrip1_ItemClicked);
@@ -246,9 +247,10 @@ namespace EDDemo
             // bUSQUEDAToolStripMenuItem
             // 
             this.bUSQUEDAToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.bUSQUEDAINTERNAToolStripMenuItem});
+            this.bUSQUEDAINTERNAToolStripMenuItem,
+            this.bUSQUEDASECUENCIALToolStripMenuItem});
             this.bUSQUEDAToolStripMenuItem.Name = "bUSQUEDAToolStripMenuItem";
-            this.bUSQUEDAToolStripMenuItem.Size = new System.Drawing.Size(120, 32);
+            this.bUSQUEDAToolStripMenuItem.Size = new System.Drawing.Size(120, 29);
             this.bUSQUEDAToolStripMenuItem.Text = "BUSQUEDA";
             this.bUSQUEDAToolStripMenuItem.Click += new System.EventHandler(this.bUSQUEDAToolStripMenuItem_Click);
             // 
@@ -258,6 +260,13 @@ namespace EDDemo
             this.bUSQUEDAINTERNAToolStripMenuItem.Size = new System.Drawing.Size(283, 34);
             this.bUSQUEDAINTERNAToolStripMenuItem.Text = "BUSQUEDA INTERNA";
             this.bUSQUEDAINTERNAToolStripMenuItem.Click += new System.EventHandler(this.bUSQUEDAINTERNAToolStripMenuItem_Click);
+            // 
+            // bUSQUEDASECUENCIALToolStripMenuItem
+            // 
+            this.bUSQUEDASECUENCIALToolStripMenuItem.Name = "bUSQUEDASECUENCIALToolStripMenuItem";
+            this.bUSQUEDASECUENCIALToolStripMenuItem.Size = new System.Drawing.Size(311, 34);
+            this.bUSQUEDASECUENCIALToolStripMenuItem.Text = "BUSQUEDA SECUENCIAL";
+            this.bUSQUEDASECUENCIALToolStripMenuItem.Click += new System.EventHandler(this.bUSQUEDASECUENCIALToolStripMenuItem_Click);
             // 
             // frmInicio
             // 
@@ -304,6 +313,7 @@ namespace EDDemo
         private System.Windows.Forms.ToolStripMenuItem rADIXToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem bUSQUEDAToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem bUSQUEDAINTERNAToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem bUSQUEDASECUENCIALToolStripMenuItem;
     }
 }
 

@@ -195,5 +195,14 @@ namespace EDDemo
 
             busquedaInterna.Show();
         }
+
+        private void bUSQUEDASECUENCIALToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            BusquedaSecuencial busquedaSecuencial = new BusquedaSecuencial();
+
+            busquedaSecuencial.MdiParent = this;
+
+            busquedaSecuencial.Show();
+        }
     }
 }

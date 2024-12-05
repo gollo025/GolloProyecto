@@ -320,6 +320,11 @@ namespace EDDemo.Estructuras_No_Lineales
                 MessageBox.Show("El árbol no es un árbol binario lleno.");
 
         }
+
+        private void label4_Click_1(object sender, EventArgs e)
+        {
+
+        }
     }
 
 

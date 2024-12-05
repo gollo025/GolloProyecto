@@ -58,11 +58,11 @@ namespace EDDemo.Estructuras_No_Lineales
             this.lblHojas = new System.Windows.Forms.Label();
             this.btnHojas = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
-            this.CantidadNodos = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.lblNodos = new System.Windows.Forms.Label();
             this.btnArbolCompleto = new System.Windows.Forms.Button();
             this.btnArbolLleno = new System.Windows.Forms.Button();
+            this.label7 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.txtNodos)).BeginInit();
             this.SuspendLayout();
             // 
@@ -214,7 +214,7 @@ namespace EDDemo.Estructuras_No_Lineales
             // lblBuscado
             // 
             this.lblBuscado.AutoSize = true;
-            this.lblBuscado.Location = new System.Drawing.Point(595, 171);
+            this.lblBuscado.Location = new System.Drawing.Point(593, 171);
             this.lblBuscado.Name = "lblBuscado";
             this.lblBuscado.Size = new System.Drawing.Size(0, 20);
             this.lblBuscado.TabIndex = 16;
@@ -285,7 +285,7 @@ namespace EDDemo.Estructuras_No_Lineales
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(530, 197);
+            this.label6.Location = new System.Drawing.Point(527, 197);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(55, 20);
             this.label6.TabIndex = 24;
@@ -304,7 +304,7 @@ namespace EDDemo.Estructuras_No_Lineales
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(529, 226);
+            this.label5.Location = new System.Drawing.Point(530, 226);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(54, 20);
             this.label5.TabIndex = 26;
@@ -339,32 +339,24 @@ namespace EDDemo.Estructuras_No_Lineales
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click_1);
             // 
-            // CantidadNodos
-            // 
-            this.CantidadNodos.AutoSize = true;
-            this.CantidadNodos.Location = new System.Drawing.Point(689, 171);
-            this.CantidadNodos.Name = "CantidadNodos";
-            this.CantidadNodos.Size = new System.Drawing.Size(118, 20);
-            this.CantidadNodos.TabIndex = 30;
-            this.CantidadNodos.Text = "Nodo Buscado:";
-            // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(529, 171);
+            this.label4.Location = new System.Drawing.Point(527, 171);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(59, 20);
+            this.label4.Size = new System.Drawing.Size(51, 20);
             this.label4.TabIndex = 31;
-            this.label4.Text = "Nodos:";
+            this.label4.Text = "Nodo:";
+            this.label4.Click += new System.EventHandler(this.label4_Click_1);
             // 
             // lblNodos
             // 
             this.lblNodos.AutoSize = true;
-            this.lblNodos.Location = new System.Drawing.Point(585, 171);
+            this.lblNodos.Location = new System.Drawing.Point(884, 226);
             this.lblNodos.Name = "lblNodos";
-            this.lblNodos.Size = new System.Drawing.Size(70, 20);
+            this.lblNodos.Size = new System.Drawing.Size(67, 20);
             this.lblNodos.TabIndex = 32;
-            this.lblNodos.Text = "buscado";
+            this.lblNodos.Text = "NODOS";
             // 
             // btnArbolCompleto
             // 
@@ -386,17 +378,26 @@ namespace EDDemo.Estructuras_No_Lineales
             this.btnArbolLleno.UseVisualStyleBackColor = true;
             this.btnArbolLleno.Click += new System.EventHandler(this.btnArbolLleno_Click);
             // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(718, 226);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(147, 20);
+            this.label7.TabIndex = 35;
+            this.label7.Text = "Cantidad de nodos:";
+            // 
             // frmArboles
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlLight;
             this.ClientSize = new System.Drawing.Size(1286, 539);
+            this.Controls.Add(this.label7);
             this.Controls.Add(this.btnArbolLleno);
             this.Controls.Add(this.btnArbolCompleto);
             this.Controls.Add(this.lblNodos);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.CantidadNodos);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.btnHojas);
             this.Controls.Add(this.lblHojas);
@@ -467,10 +468,10 @@ namespace EDDemo.Estructuras_No_Lineales
         private System.Windows.Forms.Label lblHojas;
         private System.Windows.Forms.Button btnHojas;
         private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Label CantidadNodos;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label lblNodos;
         private System.Windows.Forms.Button btnArbolCompleto;
         private System.Windows.Forms.Button btnArbolLleno;
+        private System.Windows.Forms.Label label7;
     }
 }

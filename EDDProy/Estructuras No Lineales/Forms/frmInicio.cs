@@ -204,5 +204,14 @@ namespace EDDemo
 
             busquedaSecuencial.Show();
         }
+
+        private void bUSQUEDAHASHToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            BusquedaHash busquedaHash = new BusquedaHash();
+
+            busquedaHash .MdiParent = this;
+
+            busquedaHash .Show();
+        }
     }
 }
